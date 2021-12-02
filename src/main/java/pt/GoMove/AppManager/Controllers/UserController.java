@@ -24,16 +24,16 @@ public class UserController {
     private UserRepository userRepository;
     
     @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Iterable<User> getStudents() {
-        logger.info("Sending all students");
+    public Iterable<User> getUsers() {
+        logger.info("Sending all users");
         return userRepository.findAll();
     }
     
     // Deviamos usar o RequestParam
     @GetMapping(path = "/date/{sdate}/{edate}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Iterable<User> getStudentsByDate(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate sdate,
+    public Iterable<User> getUsersByDate(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate sdate,
                                                 @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate edate) {
-        logger.info("Sending all students with birth dates between :"+
+        logger.info("Sending all users with birth dates between :"+
         sdate +" and " +edate);
         return UserRepository.findByBdateBetween(sdate, edate);
     }
