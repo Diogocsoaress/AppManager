@@ -35,32 +35,30 @@ public class User {
     private String area;
 
     public User() {}
-    public int getId() {
-        return id;
-    }
-    public String getName() {
-        return name;
-    }
-    public String getPlace() {
-        return place;
-    }
-    public LocalDate getBdate() {
-        return bdate;
-    }
-    public char getGender() {
-        return gender;
-    }
-    public String getEmail() {
-        return email;
-    }
-    public String getPassword() {
-        return password;
-    }
-    
-    public int getPoints() {
-        return points;
-    }
-    public String getArea() {
-        return area;
-    }
+    public int getId() { return id; }
+
+    public String getName() { return name; }
+
+    public String getPlace() { return place; }
+
+    public LocalDate getBdate() { return bdate; }
+
+    public char getGender() { return gender; }
+
+    public String getEmail() { return email; }
+
+    public String getPassword() { return password; }
+
+    public int getPoints() { return points; }
+
+    public String getArea() { return area; }
+
+    String QueryFindUnitPlans =
+    "SELECT u.dis_id AS id, u.dis_nome AS name, "+
+    "u.dis_pontos AS points, "+
+    "p.pla_area AS area "+
+    "FROM disciplinas u "+
+    "INNER JOIN planoestudos p ON u.dis_id=p.pla_dis_id "+
+    "INNER JOIN cursos c ON p.pla_cur_id=c.cur_id";
+
 }
