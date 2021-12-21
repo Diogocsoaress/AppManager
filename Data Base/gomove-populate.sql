@@ -1,33 +1,3 @@
-create table users (
-
-	usr_id SERIAL not null,
-
-	usr_username VARCHAR(20) not null,
-	usr_name VARCHAR(25) not null,  	
-	usr_bdate date not null, 		
-	usr_gender CHAR(1) not null, 		
-	usr_email VARCHAR(30), 					
-	usr_password VARCHAR(20),
-	usr_points int not null,
-	usr_area_id VARCHAR(15),
-
-	primary key (usr_id)	
-);           
-
-
-
-create table areas (
-
-	are_id SERIAL not null,
-
-	are_ids int not null,
-	are_points int not null,
-
-	primary key (are_id)	
-
-);
-
-
 insert into users (usr_username, usr_name, usr_bdate, usr_gender, usr_email,  usr_password, usr_points, usr_area_id) values ('john23','João Silva',to_date('2002.01.01','YYYY.MM.DD'),'M','jsilvaa@gmail.com','egi_egj53_98', 19875, '#1345');  
 insert into users (usr_username, usr_name, usr_bdate, usr_gender, usr_email,  usr_password, usr_points, usr_area_id) values ('bolds43','Hugo Costa',to_date('2001.03.03','YYYY.MM.DD'),'M','hgcosta@sapo.pt','eigohre945', 12356, '#235');  
 insert into users (usr_username, usr_name, usr_bdate, usr_gender, usr_email,  usr_password, usr_points, usr_area_id) values ('makag','Miguel Gouveia',to_date('2000.07.06','YYYY.MM.DD'),'M','makag@gmail.com','egbeign45', 123427, '#1');  
@@ -47,4 +17,3 @@ insert into areas (are_ids, are_points) values (127, 157);
 insert into areas (are_ids, are_points) values (128, 2700);
 
 commit;
-          
