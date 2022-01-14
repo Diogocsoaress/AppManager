@@ -26,3 +26,25 @@ create table areas (
 	primary key (are_id)	
 
 );          
+
+
+
+create table coords (
+
+	crd_id SERIAL not null,
+
+	crd_latone VARCHAR(15),
+	crd_lngone VARCHAR(15),
+
+	crd_lattwo VARCHAR(15),
+	crd_lngtwo VARCHAR(15),
+
+	crd_latthree VARCHAR(15),
+	crd_lngthree VARCHAR(15),
+
+	crd_latfour VARCHAR(15),
+	crd_lngfour VARCHAR(15),
+
+	primary key(crd_id)
+);
+adicionar pontos (coordenadas) das áreas
