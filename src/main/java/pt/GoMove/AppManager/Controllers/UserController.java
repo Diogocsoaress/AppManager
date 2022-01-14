@@ -22,13 +22,13 @@ public class UserController {
     private Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
     private UserRepository userRepository;
-    
+
     @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public Iterable<User> getUsers() {
         logger.info("Sending all users");
         return userRepository.findAll();
     }
-    
+
     // Deviamos usar o RequestParam
     @GetMapping(path = "/date/{sdate}/{edate}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Iterable<User> getUsersByDate(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate sdate,

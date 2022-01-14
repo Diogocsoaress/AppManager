@@ -19,8 +19,6 @@ public class User {
     private int id;
     @Column(name="usr_name")    
     private String name;
-    @Column(name="usr_place")    
-    private String place;
     @Column(name="usr_bdate")    
     private LocalDate bdate;
     @Column(name="usr_gender")    
@@ -40,9 +38,6 @@ public class User {
     }
     public String getName() {
         return name;
-    }
-    public String getPlace() {
-        return place;
     }
     public LocalDate getBdate() {
         return bdate;
