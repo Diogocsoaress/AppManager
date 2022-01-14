@@ -13,6 +13,7 @@ import javax.persistence.Table;
 @Entity 
 @Table(name="users")
 public class User {
+
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="usr_id")    
@@ -33,6 +34,7 @@ public class User {
     private String area;
 
     public User() {}
+
     public int getId() {
         return id;
     }
@@ -58,4 +60,6 @@ public class User {
     public String getArea() {
         return area;
     }
+
+
 }
