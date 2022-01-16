@@ -20,6 +20,28 @@ insert into areas (are_ids, are_points) values (153, 9231);
 insert into areas (are_ids, are_points) values (235, 12356);
 insert into areas (are_ids, are_points) values (1345, 19875);
 
-insert into coords (crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthr, crd_lngthr, crd_latfou, crd_lngfou) values ()
+
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (1, 38.695884, -9.441235, 38.705814, -9.443018, 38.706534, -9.436962, 38.694535, -9.430397);
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (5, 38.706288, -9.143562, 38.706456, -9.146257, 38.708214, -9.145913, 38.707435, -9.143380);
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (15, 38.710971, -9.147111, 38.711552, -9.147261, 38.711795, -9.145808, 38.710841, -9.145948);
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (45, 38.712327, -9.145309, 38.712812, -9.145390, 38.712825, -9.145030, 38.712348, -9.144960);
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (59, 38.713612, -9.146834, 38.714114, -9.146737, 38.714227, -9.146136, 38.713537, -9.146044);
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (70, 38.715031, -9.147611, 38.716073, -9.147788, 38.715868, -9.146903, 38.715408, -9.146994);
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (146, 38.695964, -9.438719, 38.696910, -9.438837, 38.696977, -9.437914, 38.696291, -9.437710);
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (153, 38.721782, -9.147418, 38.722150, -9.146769, 38.720543, -9.145379, 38.720246, -9.146125);
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (235, 38.721708, -9.144919, 38.723332, -9.145639, 38.723324, -9.144276, 38.721893, -9.143685);
+insert into coords (crd_are_id, crd_latone, crd_lngone, crd_lattwo, crd_lngtwo, crd_latthree, crd_lngthree, crd_latfour, crd_lngfour) values (1345, 38.727529, -9.140499, 38.731496, -9.140757, 38.731346, -9.137583, 38.727362, -9.137562);
+
+
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (1,1);
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (2,2);
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (3,3);
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (4,4);
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (5,5);
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (6,6);
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (7,7);
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (8,8);
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (9,9);
+insert into areacoords (areacrd_area_id, areacrd_crd_id) values (10,10);
 
 commit;
