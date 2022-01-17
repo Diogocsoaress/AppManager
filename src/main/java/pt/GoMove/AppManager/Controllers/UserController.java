@@ -30,7 +30,7 @@ public class UserController {
     }
 
 
-    @GetMapping(path = "/date/sdate/edate", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/date/{sdate}/{edate}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Iterable<User> getUsersByDate(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate sdate,
                                                 @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate edate) {
         logger.info("Sending all users with birth dates between :"+
