@@ -1,4 +1,4 @@
-insert into users (usr_username, usr_name, usr_bdate, usr_gender, usr_email,  usr_password, usr_points, usr_area_id) values ('john23','João Silva',to_date('2002.01.01','YYYY.MM.DD'),'M','jsilvaa@gmail.com','egi_egj53_98', 19875, 1345);  
+insert into users (usr_username, usr_name, usr_bdate, usr_gender, usr_email,  usr_password, usr_points, usr_area_id) values ('john23','João Silva',to_date('2002-01-01','YYYY.MM.DD'),'M','jsilvaa@gmail.com','egi_egj53_98', 19875, 1345);  
 insert into users (usr_username, usr_name, usr_bdate, usr_gender, usr_email,  usr_password, usr_points, usr_area_id) values ('bolds43','Hugo Costa',to_date('2001.03.03','YYYY.MM.DD'),'M','hgcosta@sapo.pt','eigohre945', 12356, 235);  
 insert into users (usr_username, usr_name, usr_bdate, usr_gender, usr_email,  usr_password, usr_points, usr_area_id) values ('makag','Miguel Gouveia',to_date('2000.07.06','YYYY.MM.DD'),'M','makag@gmail.com','egbeign45', 123427, 1);  
 insert into users (usr_username, usr_name, usr_bdate, usr_gender, usr_email,  usr_password, usr_points, usr_area_id) values ('reverse','Rui Silva',to_date('2002.09.23','YYYY.MM.DD'),'M','russi@mac.com','ghwug7938', 12349, 5);  

@@ -17,7 +17,7 @@ import pt.GoMove.AppManager.Models.Repositories.UserRepository;
 
 
 @RestController
-@RequestMapping(path = "/api/users")
+@RequestMapping(path = "/users")
 public class UserController {
     private Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
@@ -29,7 +29,7 @@ public class UserController {
         return userRepository.findAll();
     }
 
-    // Deviamos usar o RequestParam
+
     @GetMapping(path = "/date/{sdate}/{edate}", produces = MediaType.APPLICATION_JSON_VALUE)
     public Iterable<User> getUsersByDate(@PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate sdate,
                                                 @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate edate) {
