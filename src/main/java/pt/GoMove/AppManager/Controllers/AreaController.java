@@ -18,8 +18,14 @@ public class AreaController {
     @Autowired
     private AreaRepository areaRepository;
     @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Iterable<Area> getUnits() {
+    public Iterable<Area> getAreas() {
         logger.info("Sending all areas");
         return areaRepository.findAll();
     }
+
+    /*@GetMapping(path = "/points", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<Area> getAreasByPoints(){
+        logger.info("Sending all areas by points");
+        return areaRepository.;
+    }*/
 }

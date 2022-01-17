@@ -35,6 +35,6 @@ public class UserController {
                                                 @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate edate) {
         logger.info("Sending all users with birth dates between :"+
         sdate +" and " +edate);
-        return UserRepository.findByBdateBetween(sdate, edate);
+        return userRepository.findByBdateBetween(sdate, edate);
     }
 }

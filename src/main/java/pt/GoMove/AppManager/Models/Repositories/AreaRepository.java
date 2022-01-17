@@ -6,4 +6,5 @@ import pt.GoMove.AppManager.Models.Area;
 
 public interface AreaRepository extends CrudRepository<Area,Integer> {
     public Iterable<Area> findById(int Id);
+    public Iterable<Area> findByPoints(int points);
 }
