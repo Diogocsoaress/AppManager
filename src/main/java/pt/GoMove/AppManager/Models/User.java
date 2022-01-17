@@ -1,6 +1,6 @@
 package pt.GoMove.AppManager.Models;
 
-//import java.time.LocalDate;
+import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,7 +21,7 @@ public class User {
     @Column(name="usr_name")    
     private String name;
     @Column(name="usr_bdate")    
-    private String bdate;
+    private LocalDate bdate;
     @Column(name="usr_gender")    
     private char gender;
     @Column(name="usr_email")    
@@ -41,7 +41,7 @@ public class User {
     public String getName() {
         return name;
     }
-    public String getBdate() {
+    public LocalDate getBdate() {
         return bdate;
     }
     public char getGender() {

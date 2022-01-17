@@ -23,9 +23,9 @@ public class AreaController {
         return areaRepository.findAll();
     }
 
-    /*@GetMapping(path = "/points", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/points", produces = MediaType.APPLICATION_JSON_VALUE)
     public Iterable<Area> getAreasByPoints(){
         logger.info("Sending all areas by points");
-        return areaRepository.;
-    }*/
+        return areaRepository.findByPoints();
+    }
 }
