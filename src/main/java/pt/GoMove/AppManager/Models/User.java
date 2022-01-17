@@ -16,8 +16,8 @@ public class User {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="usr_id")    
-    private int id;
+    @Column(name="usr_username")    
+    private String username;
     @Column(name="usr_name")    
     private String name;
     @Column(name="usr_bdate")    
@@ -35,8 +35,8 @@ public class User {
 
     public User() {}
 
-    public int getId() {
-        return id;
+    public String getUsername() {
+        return username;
     }
     public String getName() {
         return name;

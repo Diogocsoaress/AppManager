@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class Coords {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="coords_are_id")    
+    @Column(name="crd_are_id")    
     private int id;
 
     @Column(name="crd_latone")    
