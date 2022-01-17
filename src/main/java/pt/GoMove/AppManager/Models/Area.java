@@ -13,7 +13,7 @@ import javax.persistence.Table;
 public class Area {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="are_id")    
+    @Column(name="are_ids")    
     private int id;
     @Column(name="are_points")    
     private int points;
