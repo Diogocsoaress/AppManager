@@ -12,7 +12,7 @@ import pt.GoMove.AppManager.Models.Area;
 import pt.GoMove.AppManager.Models.Repositories.AreaRepository;
 
 @RestController
-@RequestMapping(path = "/area")
+@RequestMapping(path = "/areas")
 public class AreaController {
     private Logger logger = LoggerFactory.getLogger(AreaController.class);
     @Autowired
