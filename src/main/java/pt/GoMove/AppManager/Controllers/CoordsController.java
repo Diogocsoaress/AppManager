@@ -18,8 +18,14 @@ public class CoordsController {
     @Autowired
     private CoordsRepository coordsRepository;
     @GetMapping(path = "", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Iterable<Coords> getUnits() {
+    public Iterable<Coords> getCoords() {
         logger.info("Sending all coords");
         return coordsRepository.findAll();
+    }
+
+    @GetMapping(path = "/sqrArea", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Iterable<Coords> getCoordsbySqrArea(){
+        logger.info("Sending all coords by square area");
+        return coordsRepository.findBySqrArea();
     }
 }
