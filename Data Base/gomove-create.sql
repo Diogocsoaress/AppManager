@@ -47,6 +47,8 @@ create table coords (
 	crd_latfour FLOAT,
 	crd_lngfour FLOAT,
 
+	crd_sqrarea FLOAT,
+	
 	primary key(crd_id)
 );
 

@@ -36,6 +36,9 @@ public class Coords {
     @Column(name="crd_lngfour")    
     private float lngfour;
 
+    @Column(name="crd_sqrarea")    
+    private float sqrarea;
+
 
     public Coords() {}
     public int getId() {
@@ -68,5 +71,9 @@ public class Coords {
     }
     public float getlngfour() {
         return lngfour;
+    }
+
+    public float getsqrarea() {
+        return sqrarea;
     }
 }
